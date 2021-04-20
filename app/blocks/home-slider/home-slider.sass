@@ -1,0 +1,128 @@
+.home-slider
+	display: block
+	
+	&__item
+		width: 100%
+		height: 600px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		@media (max-width: 767px)
+			height: auto
+			background-position: left center
+
+	&__content
+		margin: 84px 70px
+		position: relative
+		z-index: 5
+		@media (max-width: 767px)
+			margin: 50px
+
+	&__title
+		color: $navy
+		font: 800 64px $nun
+		line-height: 70px
+		max-width: 620px
+		@media (max-width: 767px)
+			font-size: 42px
+			line-height: 44px
+		@media (max-width: 575px)
+			font-size: 36px
+			line-height: 38px
+		@media (max-width: 450px)
+			font-size: 24px
+			line-height: 26px
+
+	&__text
+		color: $navy
+		font: $n
+		max-width: 411px
+		margin-top: 40px
+
+	&__more
+		color: #fff
+		font: 400 18px $nun
+		text-decoration: none
+		width: 156px
+		height: 37px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: $navy
+		border-radius: 20px
+		margin-top: 50px
+
+		&:hover
+			color: #fff
+			background-color: $green
+
+	.bx-wrapper
+		margin-bottom: 0
+		background: transparent
+		border: none
+		box-shadow: none
+
+	.bx-controls-direction
+		width: 100%
+		height: 0
+		max-width: 1320px
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		margin: auto
+		@media (max-width: 1399px)
+			max-width: 1140px
+		@media (max-width: 1199px)
+			max-width: 960px
+		@media (max-width: 991px)
+			max-width: 720px
+		@media (max-width: 767px)
+			max-width: 540px
+		@media (max-width: 575px)
+			max-width: 100%
+
+	.bx-prev
+		width: 30px!important
+		height: 48px!important
+		margin-top: 0!important
+		top: 0!important
+		bottom: 0!important
+		margin: auto!important
+		left: 0!important
+		z-index: 4!important
+		mask-image: url(../images/spriteSvg.svg#prev)
+		mask-position: center
+		mask-repeat: no-repeat
+		mask-size: cover
+		background: none
+		background-color: #fff
+		@media (max-width: 767px)
+			left: 10px!important
+
+		&:hover, &:active, &:focus
+			mask-position: center
+			background-color: $green
+
+	.bx-next
+		width: 30px!important
+		height: 48px!important
+		margin-top: 0!important
+		top: 0!important
+		bottom: 0!important
+		margin: auto!important
+		right: 0!important
+		z-index: 4!important
+		mask-image: url(../images/spriteSvg.svg#next)
+		mask-position: center
+		mask-repeat: no-repeat
+		mask-size: cover
+		background: none
+		background-color: #fff
+		@media (max-width: 767px)
+			right: 10px!important
+
+		&:hover, &:active, &:focus
+			mask-position: center
+			background-color: $green

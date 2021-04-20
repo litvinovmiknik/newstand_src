@@ -1,0 +1,17 @@
+extends layouts/default
+block title
+    title Новый стандарт
+block link
+block body
+    .b-page
+        +header()
+        main.b-main
+            .container
+                .row
+                    .col-12
+                        +breadcrumbs(['Главная', 'Акции'])
+                        h1._title Акции
+                        +actions-list()
+                        +pagination()
+        +footer()
+block script

@@ -1,0 +1,49 @@
+.action-preview
+	text-decoration: none
+	display: flex
+	align-items: center
+	width: 597px
+	height: 220px
+	border-radius: 15px
+	overflow: hidden
+	@media screen and ( max-width: 1399px )
+		width: 547px
+	@media screen and ( max-width: 575px )
+		width: 249px!important
+		height: auto
+		flex-direction: column
+
+	&__img
+		display: block
+		width: 249px
+		height: 220px
+
+	&__link
+		display: block
+		height: 100%
+		padding: 30px
+		box-sizing: border-box
+		text-decoration: none
+		background-color: $blue
+		position: relative
+
+	&:hover &__link
+		background-color: $navy
+	
+	&__title
+		min-height: 50px
+		color: #fff
+		font: 700 24px $nun
+		line-height: 25px
+		margin: 10px 0
+
+	&__text
+		color: #fff
+		font: 400 16px $nun
+
+	&__icon
+		width: 15px
+		height: 11px
+		position: absolute
+		bottom: 15px
+		right: 20px

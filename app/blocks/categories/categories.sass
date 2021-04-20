@@ -1,0 +1,79 @@
+.categories
+	display: flex
+	align-items: center
+	justify-content: center
+	@media screen and ( max-width: 767px )
+		display: none
+
+	&__item
+		color: #fff
+		font: 400 22px $nun
+		cursor: pointer
+		padding: 12px 0
+		margin-right: 75px
+		position: relative
+		@media screen and ( max-width: 767px )
+			margin-right: 0
+			padding: 0
+
+		&:hover
+			color: $green-light
+
+		&:last-child
+			margin-right: 0
+
+	&__arrow
+		width: 12px
+		height: 8px
+		margin-left: 5px
+		stroke: white
+		@media screen and ( max-width: 767px )
+			display: none
+
+	&__item:hover &__arrow
+		stroke: $green-light
+
+	&__list
+		display: flex
+		align-items: center
+
+	&__sublist
+		min-width: 220px
+		display: none
+		position: absolute
+		top: 53px
+		left: 0
+		z-index: 5
+		background-color: $navy
+		padding: 15px
+		@media screen and ( max-width: 767px )
+			position: relative
+			margin: 0!important
+			padding: 10px 0!important
+			top: 0
+
+	&__item:hover &__sublist
+		display: block
+
+	&__subitem
+		margin-bottom: 10px
+		@media screen and ( max-width: 767px )
+			margin-bottom: 5px
+
+		&:last-child
+			margin-bottom: 0
+
+	&__link
+		display: block
+		text-decoration: none
+		color: #fff
+		font: 400 16px $nun
+		line-height: 20px
+		@media screen and ( max-width: 767px )
+			margin: 0!important
+
+		&:hover
+			color: $green-light
+	
+	&__item > &__link
+		font: 400 22px $nun

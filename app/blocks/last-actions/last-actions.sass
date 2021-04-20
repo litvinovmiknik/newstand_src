@@ -1,0 +1,41 @@
+.last-actions
+	padding: 60px 0
+	background-image: url(../images/bubbles-left.png), url(../images/bubbles-right.png)
+	background-repeat: no-repeat, no-repeat
+	background-position: left top, right top
+	@media screen and ( max-width: 1199px )
+		background-position: left top, right bottom
+	
+	&__title
+		+title()
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		grid-gap: 20px
+		margin-top: 20px
+
+	&__more
+		display: block
+		width: 155px
+		height: 35px
+		border: 1px solid $blue
+		border-radius: 20px
+		color: $navy
+		font: 400 16px $nun
+		text-decoration: none
+		background-color: transparent
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 40px auto 0
+		@media screen and ( max-width: 1199px )
+			margin-left: 0
+			margin-right: 0
+
+		&:hover
+			color: #fff
+			background-color: $green
+			border: 1px solid $green
+	

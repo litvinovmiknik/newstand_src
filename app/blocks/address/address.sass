@@ -1,0 +1,45 @@
+.address
+	display: flex
+	align-items: center
+	position: relative
+
+	&__icon
+		width: 20px
+		height: 20px
+		flex-shrink: 0
+		margin-right: 7px
+
+	&__link
+		color: $navy
+		font: 400 18px $nun
+		line-height: 20px
+		text-decoration: none
+		border-bottom: 1px dashed $navy
+
+		&:hover
+			color: $green
+			border-bottom: 1px dashed $green
+
+	&__popup
+		background-color: #fff
+		padding: 10px 15px
+		border: 1px solid #C4C4C4
+		border-radius: 5px
+		display: none
+		position: absolute
+		top: 28px
+		left: 26px
+
+	&__popup-link
+		display: block
+		color: $navy
+		font: 400 14px $nun
+		text-decoration: none
+		white-space: nowrap
+		margin-bottom: 10px
+
+		&:last-child
+			margin-bottom: 0
+
+		&:hover
+			color: $green

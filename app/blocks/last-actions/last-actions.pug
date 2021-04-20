@@ -1,0 +1,11 @@
+mixin last-actions()
+	section.b-last-actions&attributes(attributes)
+		.container
+			.row
+				.col-12
+					h2._title Акции и скидки
+					._list
+						+action-preview()
+						+action-preview()
+					a._more(href="#") Другие акции
+		

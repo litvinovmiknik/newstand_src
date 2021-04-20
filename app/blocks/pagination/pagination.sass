@@ -1,0 +1,77 @@
+.pagination
+	display: flex
+	align-items: center
+	justify-content: center
+	margin: 45px 0
+	@media screen and ( max-width: 1199px )
+		justify-content: flex-start
+
+	li:first-child a, li:last-child a
+		width: 30px
+		height: 30px
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		border: 1px solid $navy
+		border-radius: 15px
+		background-color: $navy
+		color: #fff
+
+		&:hover
+			color: #fff
+
+	&__arrow
+
+		&--disable
+			border: 1px solid #E5E5E5!important
+			background-color: #fff!important
+
+	&__next
+		width: 7px
+		height: 14px
+		display: inline-block
+		background-color: #fff
+		mask-image: url(../images/spriteSvg.svg#next-2)
+		mask-repeat: no-repeat
+		mask-size: cover
+		mask-position: center
+
+	&__prev
+		width: 7px
+		height: 14px
+		display: inline-block
+		background-color: #fff
+		mask-image: url(../images/spriteSvg.svg#prev-2)
+		mask-repeat: no-repeat
+		mask-size: cover
+		mask-position: center
+
+	&__arrow--disable &__prev, &__arrow--disable &__next
+		background-color: #E5E5E5
+
+	li a
+		width: 30px
+		height: 30px
+		border: 1px solid #fff
+		border-radius: 15px
+		box-sizing: border-box
+		display: flex
+		align-items: center
+		justify-content: center
+		color: #000
+		font: 400 14px $nun
+		text-decoration: none
+		margin: 0 1px
+
+		&:hover
+			color: $green
+
+	li.active a
+		color: $navy
+		border: 1px solid $navy
+		background-color: #fff
+
+		&:hover
+			color: $navy
+			border: 1px solid $navy

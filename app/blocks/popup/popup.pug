@@ -1,0 +1,15 @@
+mixin popup()
+	.b-popup&attributes(attributes)
+		._container
+			h2._title Заказать звонок
+			form._form(action="#" method="post")
+				input._input(type="text" name="name" placeholder="Ваше имя *")
+				input._input(type="text" name="phone" placeholder="Телефон *")
+				input._input(type="email" name="email" placeholder="E-mail *")
+				textarea._textarea(name="message" placeholder="Ваш вопрос")
+				._note Поля, отмеченные * обязательны для заполнения.
+				label._label
+					input._checkbox(type="checkbox" name="agree")
+					|Даю согласие,на обработку персональных данных
+				button._button Отправить
+			svg._close: use(xlink:href="assets/images/spriteSvg.svg#close")

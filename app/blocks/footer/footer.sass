@@ -1,0 +1,92 @@
+.footer
+	background-color: $navy
+	position: relative
+	margin-top: auto
+
+	&__logo
+		margin-top: 40px
+		@media screen and ( max-width: 767px )
+			justify-content: center
+
+		.logo__name
+			color: #fff
+			font: 800 24px $nun
+			@media screen and ( max-width: 991px )
+				font-size: 18px
+
+		.logo__desc
+			color: #fff
+			font: $n
+
+	&__phone
+		margin-top: 40px
+		@media screen and ( max-width: 767px )
+			justify-content: center
+
+		.phone__link
+			color: #fff
+
+		.phone__icon
+			fill: #fff
+
+	&__email
+		margin-top: 5px
+		margin-bottom: 40px
+		@media screen and ( max-width: 767px )
+			justify-content: center
+			margin-bottom: 20px
+
+		.email__link
+			color: #fff
+			font: $n
+
+		.email__icon
+			fill: #fff
+
+	&__wrap-nav
+		margin-top: 40px
+		@media screen and ( max-width:  767px)
+			display: none
+
+	&__nav
+		justify-content: center
+		margin-top: 25px
+		@media screen and ( max-width: 1199px )
+			flex-direction: column
+			margin-top: 0
+
+		.nav__link
+			color: #fff
+			@media screen and ( max-width: 1199px )
+				margin-right: 0
+				margin-bottom: 15px
+				text-align: center
+				line-height: 18px
+
+			&:hover
+				color: $green-light
+
+	&__social
+		margin-top: 40px
+		@media screen and ( max-width: 767px )
+			justify-content: center
+			margin-top: 20px
+		
+		.social__icon
+			fill: #fff
+
+			&:hover
+				fill: $green-light
+
+	&__counter
+		margin-left: auto
+		margin-top: 35px
+		@media screen and ( max-width: 767px )
+			margin-right: auto
+
+	&__created
+		justify-content: flex-end
+		margin-top: 35px
+		margin-bottom: 40px
+		@media screen and ( max-width: 767px )
+			justify-content: center

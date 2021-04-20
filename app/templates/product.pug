@@ -1,0 +1,16 @@
+extends layouts/default
+block title
+    title Новый стандарт
+block link
+block body
+    .b-page
+        +header()
+        main.b-main
+            .container
+                .row
+                    .col-12
+                        +breadcrumbs(['Главная', 'Каталог услуг', 'Обувь', 'Ботинки', 'Страница с товарами выбранной подкатегории'])
+                        h1._title Страница с товарами выбранной подкатегории
+                        +product()
+        +footer()
+block script

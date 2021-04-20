@@ -1,0 +1,17 @@
+extends layouts/default
+block title
+    title Новый стандарт
+block link
+block body
+    .b-page
+        +header()
+        main.b-main
+            +home-slider()
+            +last-actions()
+            +home-catalog()
+            +about()
+            +contacts()
+        +footer()
+block script
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6905ae21-f01f-4af7-8ed2-3bfcfcd7bc39" type="text/javascript")
+    script(src="assets/scripts/icon_customImage.js" type="text/javascript")

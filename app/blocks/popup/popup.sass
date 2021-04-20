@@ -1,0 +1,93 @@
+.popup
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 10
+	background: rgba(0, 70, 134, 0.2)
+	display: none
+	align-items: center
+	justify-content: center
+
+	&__container
+		width: 100%
+		max-width: 552px
+		padding: 35px 60px 50px 60px
+		box-sizing: border-box
+		background-color: #fff
+		position: relative
+
+	&__title
+		color: $navy
+		font: 600 36px $nun
+		line-height: 38px
+		margin-bottom: 20px
+
+	&__input
+		width: 100%
+		height: 40px
+		border: 1px solid #C4C4C4
+		padding-left: 15px
+		box-sizing: border-box
+		outline: none
+		color: #000
+		font: $n
+		margin-bottom: 20px
+
+		&::placeholder
+			color: $gray
+			font: 300 16px $nun
+
+	&__textarea
+		width: 100%
+		height: 115px
+		padding: 8px 15px
+		border: 1px solid #C4C4C4
+		box-sizing: border-box
+		outline: none
+		color: #000
+		font: $n
+		margin-bottom: 10px
+
+		&::placeholder
+			color: $gray
+			font: 300 16px $nun
+
+	&__note
+		color: $gray
+		font: 300 14px $nun
+		margin-bottom: 10px
+
+	&__checkbox
+		outline: none
+		margin-right: 13px
+
+	&__label
+		color: $gray
+		font: 300 14px $nun
+		display: flex
+		align-items: center
+
+	&__button
+		width: 156px
+		height: 37px
+		background-color: $navy
+		color: #fff
+		font: 400 18px $nun
+		border: 1px solid $navy
+		border-radius: 20px
+		outline: none
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 30px
+
+	&__close
+		width: 30px
+		height: 30px
+		position: absolute
+		top: 18px
+		right: 20px
+		cursor: pointer

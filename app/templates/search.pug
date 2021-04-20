@@ -1,0 +1,16 @@
+extends layouts/default
+block title
+    title Новый стандарт
+block link
+block body
+    .b-page
+        +header()
+        main.b-main
+            .container
+                .row
+                    .col-12
+                        +breadcrumbs(['Главная', 'Результаты поиска'])
+                        h1._title Результаты поиска
+                        +search-result()
+        +footer()
+block script

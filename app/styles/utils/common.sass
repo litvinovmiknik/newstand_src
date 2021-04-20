@@ -1,0 +1,108 @@
+html
+    height: 100%
+    
+body
+    height: 100%
+    color: #000
+    font: $n
+    line-height: 22px
+    background-color: #fff
+
+.page
+    width: 100%
+    height: 100%
+    max-width: 1920px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+
+.main
+
+    &__title
+        +title()
+
+    &__content
+        margin-top: 20px
+        margin-bottom: 60px
+
+        img
+            width: 100%
+            max-width: 600px
+            float: left
+            margin: 0 45px 30px 0
+
+        h1
+            +title()
+            margin-bottom: 20px
+
+        h2
+            color: #000
+            font: 400 40px $nun
+            margin-bottom: 20px
+            @media screen and ( max-width: 575px )
+                font-size: 30px
+                line-height: 32px
+
+        h3
+            color: #000
+            font: 400 24px $nun
+            margin-bottom: 20px
+
+        p
+            color: #000
+            font: $n
+            margin-bottom: 20px
+
+        ul
+            margin-bottom: 20px
+
+        ol
+            list-style-type: decimal
+            margin-bottom: 20px
+            margin-left: 20px
+
+        ul li
+            color: $navy
+            font: $n
+            line-height: 30px
+
+            &::before
+                content: ''
+                width: 8px
+                height: 8px
+                display: inline-block
+                background-image: url(../images/spriteSvg.svg#marker)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: cover
+                margin-right: 10px
+
+        ol li
+            color: $navy
+            font: $n
+            line-height: 30px
+
+        a
+            color: $blue
+            font: $n
+            mb
+
+            &:hover
+                color: $green
+
+        table
+            margin: 20px 0
+
+            td
+                border: 1px solid $gray
+                padding: 10px
+                color: #000
+                font: $n
+
+.actions-detail
+
+    &__content
+
+        img
+            max-width: 100%
+            width: auto

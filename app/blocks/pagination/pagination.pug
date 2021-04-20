@@ -1,0 +1,22 @@
+mixin pagination()
+	ul.b-pagination&attributes(attributes)
+		li._item
+			a._arrow.-disable(href="#")
+				span._prev
+		li._item
+			a._link(href="#") 1
+		li._item
+			a._link(href="#") 2
+		li._item.active
+			a._link(href="#") 3
+		li._item
+			a._link(href="#") 4
+		li._item
+			a._link(href="#") 5
+		li._item
+			a._link(href="#") 6
+		li._item
+			a._link(href="#") 7
+		li._item
+			a._arrow(href="#")
+				span._next

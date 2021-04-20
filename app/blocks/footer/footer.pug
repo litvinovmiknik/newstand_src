@@ -1,0 +1,14 @@
+mixin footer()
+	footer.b-footer&attributes(attributes)
+		.container
+			.row
+				.col-12.col-md-5.col-xl-4.col-xxl-3
+					+logo('white')(class="footer__logo")
+					+phone()(class="footer__phone")
+					+email()(class="footer__email")
+				.col-md-3.col-xl-6.col-xxl-6._wrap-nav
+					+nav()(class="footer__nav")
+				.col-12.col-md-4.col-xl-2.col-xxl-3
+					+social()(class="footer__social")
+					+counter()(class="footer__counter")
+					+created()(class="footer__created")

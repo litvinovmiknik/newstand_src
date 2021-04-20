@@ -1,0 +1,71 @@
+.header
+	display: block
+	
+	&__top
+		min-height: 57px
+		background-color: $bg
+		display: flex
+		align-items: center
+
+	&__middle
+		min-height: 131px
+		background-color: #fff
+		display: flex
+		align-items: center
+
+	&__bottom
+		background-color: $navy
+
+	&__contacts
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media screen and ( max-width: 1399px )
+			flex-direction: column
+		@media screen and ( max-width: 1199px )
+			align-items: flex-end
+			margin-top: 20px
+			margin-bottom: 20px
+		@media screen and ( max-width: 767px )
+			align-items: center
+			margin-bottom: 0
+
+	&__callback
+		margin: 0 auto
+		@media screen and ( max-width: 1199px )
+			margin-top: 20px
+			margin-bottom: 20px
+
+	&__social
+		@media screen and ( max-width: 1199px )
+			justify-content: flex-start
+			margin-top: 20px
+			margin-bottom: 20px
+		@media screen and ( max-width: 767px )
+			justify-content: center
+			margin-top: 0
+
+	&__row
+		display: flex
+		align-items: center
+
+	&__logo
+		@media screen and ( max-width: 1199px )
+			justify-content: center
+			margin-top: 20px
+
+	&__search
+		@media screen and ( max-width: 1199px )
+			justify-content: center
+			margin: 20px auto
+
+	&__address
+		margin-right: 25px
+		@media screen and ( max-width: 1199px )
+			margin-bottom: 20px
+
+	&__actions-link
+		@media screen and ( max-width: 1199px )
+			margin-bottom: 20px
+
+			
